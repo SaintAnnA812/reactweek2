@@ -4,11 +4,11 @@ import hero from './data.json';
 import Card from './Components/Card/Card';
 
 function App() {
-  //console.log(hero);
+
   return (
     <>
       <div>
-        <div className='hero'>
+        <div className='hero_list'>
           {hero.map((item, index) => {
             return (
               <Card
@@ -17,8 +17,8 @@ function App() {
                 alterego={item.alterego}
                 occupation={item.occupation}
                 friends={item.friends}
-                superpower={item.superpower}
-                image={item.url}
+                superpowers={item.superpowers}
+                url={item.url}
                 info={item.info}
                 key={index} />
             );
